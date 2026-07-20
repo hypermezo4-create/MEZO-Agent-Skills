@@ -1,0 +1,4 @@
+interface:
+  display_name: "Docs Guard"
+  short_description: "Verify that technical documentation, examples, configuration, changelogs, and docstrings make only s"
+  default_prompt: "Use $docs-guard on the relevant diff and return an evidence-backed receipt."

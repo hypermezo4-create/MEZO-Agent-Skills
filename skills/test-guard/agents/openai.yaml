@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test Guard"
+  short_description: "Review generated or changed tests so they protect behavior without mock abuse, duplication, implemen"
+  default_prompt: "Use $test-guard on the relevant diff and return an evidence-backed receipt."

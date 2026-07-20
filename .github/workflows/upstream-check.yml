@@ -1,0 +1,27 @@
+name: Check Guard Skills Upstream
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 5 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compare pinned commit to upstream head
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          pinned=$(tr -d '\n' < upstream/guard-skills/PINNED_COMMIT)
+          head=$(gh api repos/amElnagdy/guard-skills/commits/master --jq .sha)
+          echo "pinned=$pinned"
+          echo "upstream=$head"
+          if [ "$pinned" != "$head" ]; then
+            echo "::warning::Upstream guard-skills changed. Review manually; do not auto-update."
+          fi

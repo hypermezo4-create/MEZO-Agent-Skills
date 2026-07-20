@@ -1,0 +1,5 @@
+{
+  "skill": "agent-system-guard",
+  "expected_findings": [],
+  "expected_result": "pass"
+}

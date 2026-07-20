@@ -1,0 +1,4 @@
+interface:
+  display_name: "Architecture Guard"
+  short_description: "Review high-risk structural changes for boundaries, ownership, coupling, dependency direction, migra"
+  default_prompt: "Use $architecture-guard on the relevant diff and return an evidence-backed receipt."

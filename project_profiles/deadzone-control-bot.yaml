@@ -1,0 +1,6 @@
+repository: hypermezo4-create/DeadZone-Control-Bot
+languages: [python]
+required_skills: [clean-code-guard, security-guard, test-guard, concurrency-guard, database-guard, telegram-guard, deployment-guard]
+protected_paths: ["migrations/**", "sessions/**", "fly.toml", ".github/workflows/**"]
+required_checks: ["ruff check .", "pytest"]
+approval_required_for: [database_migration, session_format_change, production_deploy, destructive_command]

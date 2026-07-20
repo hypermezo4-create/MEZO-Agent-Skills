@@ -1,0 +1,45 @@
+version: 1
+defaults:
+  always_after_nontrivial_production_change:
+    - clean-code-guard
+    - security-guard
+  max_skills_per_pass: 7
+  require_receipt: true
+rules:
+  - id: tests
+    match_paths: ["tests/**", "**/test_*.py", "**/*.test.ts", "**/*.spec.js", "**/*Test.php"]
+    skills: [test-guard]
+  - id: docs
+    match_paths: ["README*", "docs/**", "**/*.md", "**/*.rst"]
+    skills: [docs-guard]
+  - id: async-queue
+    match_terms: ["async", "await", "queue", "worker", "retry", "semaphore", "lock", "pool"]
+    skills: [concurrency-guard]
+  - id: database
+    match_paths: ["migrations/**", "alembic/**", "**/models/**", "**/*schema*", "**/*repository*"]
+    match_terms: ["postgres", "sql", "transaction", "index", "migration"]
+    skills: [database-guard]
+  - id: api
+    match_paths: ["**/routes/**", "**/api/**", "openapi.*", "**/*schema*"]
+    skills: [api-contract-guard]
+  - id: deployment
+    match_paths: ["Dockerfile", "docker-compose*.yml", "fly.toml", ".github/workflows/**", "infra/**"]
+    skills: [deployment-guard]
+  - id: telegram
+    match_terms: ["telegram", "telethon", "pyrogram", "floodwait", "update_id", "session"]
+    skills: [telegram-guard, concurrency-guard]
+  - id: wordpress
+    match_terms: ["wordpress", "wp_", "add_action", "add_filter", "WP_Query"]
+    skills: [wp-guard]
+  - id: woocommerce
+    match_terms: ["woocommerce", "wc_get_order", "HPOS", "checkout"]
+    skills: [wp-guard, woo-guard]
+  - id: android-build
+    match_terms: ["android", "xiaomi", "rom", "device tree", "ota", "artifact", "google drive"]
+    skills: [android-build-guard, deployment-guard]
+  - id: architecture
+    risk_levels: ["high", "critical"]
+    skills: [architecture-guard]
+  - id: agent-system
+    match_terms: ["gemini", "qwen", "llm", "agent", "tool call", "prompt", "model router"]
+    skills: [agent-system-guard]

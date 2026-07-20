@@ -1,0 +1,4 @@
+interface:
+  display_name: "Concurrency Guard"
+  short_description: "Review asynchronous, parallel, queued, scheduled, and event-driven code for race conditions, duplica"
+  default_prompt: "Use $concurrency-guard on the relevant diff and return an evidence-backed receipt."

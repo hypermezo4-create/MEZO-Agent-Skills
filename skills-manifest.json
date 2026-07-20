@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "skills": [
+    {
+      "description": "Review LLM agent orchestration, model routing, tools, prompts, memory, evidence, loops, and reviewer independence.",
+      "files": ["skills/agent-system-guard/SKILL.md","skills/agent-system-guard/VERSION","skills/agent-system-guard/agents/openai.yaml","skills/agent-system-guard/references/prompt-injection.md","skills/agent-system-guard/references/review-checklist.md"],
+      "name": "agent-system-guard",
+      "sha256": "132bab416f3943c0e38064bd81ccc629d7e5cc1ec23bddebc66d011518d3974a",
+      "version": "1.0.0"
+    },
+    {
+      "description": "Review Android ROM, device, kernel, build automation, artifact, release, and Google Drive delivery changes for reproducibility and integrity.",
+      "files": ["skills/android-build-guard/SKILL.md","skills/android-build-guard/VERSION","skills/android-build-guard/agents/openai.yaml","skills/android-build-guard/references/google-drive-delivery.md","skills/android-build-guard/references/review-checklist.md"],
+      "name": "android-build-guard",
+      "sha256": "a9af64cd32322a9a990886e8ab6bb3ae399784135ef9879c1fc65de6ea42321f",
+      "version": "1.0.0"
+    },
+    {
+      "description": "Review HTTP, RPC, webhook, event, and internal service contracts for validation, compatibility, failure semantics, and operability.",
+      "files": ["skills/api-contract-guard/SKILL.md","skills/api-contract-guard/VERSION","skills/api-contract-guard/agents/openai.yaml","skills/api-contract-guard/references/compatibility.md","skills/api-contract-guard/references/review-checklist.md"],
+      "name": "api-contract-guard",
+      "sha256": "ba6e042b250a6fbfa45d503bf47dc92489f0bec4822d0a95339f1b2c9ae03001",
+      "version": "1.0.0"
+    },
+    {
+      "description": "Review high-risk structural changes for boundaries, ownership, coupling, dependency direction, migration safety, and operational complexity.",
+      "files": ["skills/architecture-guard/SKILL.md","skills/architecture-guard/VERSION","skills/architecture-guard/agents/openai.yaml","skills/architecture-guard/references/migration-plans.md","skills/architecture-guard/references/review-checklist.md"],
+      "name": "architecture-guard",
+      "sha256": "b6c76ce9f2c404bc54f1204e7d9fe500e7499d02e30161b425c8837b8d366975",
+      "version": "1.0.0"
+    },
+    {
+      "description": "Review generated or changed production code for correctness, maintainability, and systematic LLM failure modes before presentation, commit, or merge.",
+      "files": ["skills/clean-code-guard/SKILL.md","skills/clean-code-guard/VERSION","skills/clean-code-guard/agents/openai.yaml","skills/clean-code-guard/references/ai-failure-modes.md","skills/clean-code-guard/references/review-checklist.md"],
+      "name": "clean-code-guard",
+      "sha256": "1ead565f8d52bc9346727dd75de7f3cbf722521402b794a20f06980b5d5671b0",
+      "version": "1.0.0"
+    },
+    {
+      "description": "Review asynchronous, parallel, queued, scheduled, and event-driven code for race conditions, duplication, starvation, overload, and recovery defects.",
+      "files": ["skills/concurrency-guard/SKILL.md","skills/concurrency-guard/VERSION","skills/concurrency-guard/agents/openai.yaml","skills/concurrency-guard/references/retry-storms.md","skills/concurrency-guard/references/review-checklist.md"],
+      "name": "concurrency-guard",
+      "sha256": "c89b784a09d282542f0ae374f1c8e4d5991435df5b8c399d626a9b7b46ad9870",
+      "version": "1.0.0"
+    },
+    {
+      "description": "Review schema, query, transaction, migration, persistence, and PostgreSQL changes for correctness, scale, and rollback safety.",
+      "files": ["skills/database-guard/SKILL.md","skills/database-guard/VERSION","skills/database-guard/agents/openai.yaml","skills/database-guard/references/migrations.md","skills/database-guard/references/review-checklist.md"],
+      "name": "database-guard",
+      "sha256": "058b8245716e30b1656c4b6ee2d3606cc93e308f8eb22b653837851952e1c67d",
+      "version": "1.0.0"
+    },
+    {
+      "description": "Review Docker, Fly.io, CI/CD, runtime configuration, health, shutdown, migrations, rollout, and rollback changes.",
+      "files": ["skills/deployment-guard/SKILL.md","skills/deployment-guard/VERSION","skills/deployment-guard/agents/openai.yaml","skills/deployment-guard/references/fly.md","skills/deployment-guard/references/review-checklist.md"],
+      "name": "deployment-guard",
+      "sha256": "24ae6f53b537708da3e3d2a36df39a2dd316aae84036ed285b91de86478127f3",
+      "version": "1.0.0"
+    },
+    {
+      "description": "Verify that technical documentation, examples, configuration, changelogs, and docstrings make only source-backed claims.",
+      "files": ["skills/docs-guard/SKILL.md","skills/docs-guard/VERSION","skills/docs-guard/agents/openai.yaml","skills/docs-guard/references/code-samples.md","skills/docs-guard/references/verification.md"],
+      "name": "docs-guard",
+      "sha256": "10cfe00f46abc46ff4185ea365603d4ee6e3ddf2604550a0dd75c8aa46ad97d0",
+      "version": "1.0.0"
+    },
+    {
+      "description": "Perform a threat-driven security review of changed application, infrastructure, workflow, and integration code.",
+      "files": ["skills/security-guard/SKILL.md","skills/security-guard/VERSION","skills/security-guard/agents/openai.yaml","skills/security-guard/references/review-checklist.md","skills/security-guard/references/trust-boundaries.md"],
+      "name": "security-guard",
+      "sha256": "da273dda93f6a3d73d39fc1f2bf09223b310a6dc17e74f61f68d9c59c1a66237",
+      "version": "1.0.0"
+    },
+    {
+      "description": "Review Telegram bot and account-client code for update handling, FloodWait, sessions, concurrency, privacy, and reliable delivery.",
+      "files": ["skills/telegram-guard/SKILL.md","skills/telegram-guard/VERSION","skills/telegram-guard/agents/openai.yaml","skills/telegram-guard/references/latency.md","skills/telegram-guard/references/review-checklist.md"],
+      "name": "telegram-guard",
+      "sha256": "abda27860df9df6e68ad1fbfe0ca79814563f4299647ff9cf808e698b1996b9d",
+      "version": "1.0.0"
+    },
+    {
+      "description": "Review generated or changed tests so they protect behavior without mock abuse, duplication, implementation-detail coupling, or meaningless coverage.",
+      "files": ["skills/test-guard/SKILL.md","skills/test-guard/VERSION","skills/test-guard/agents/openai.yaml","skills/test-guard/references/llm-app-testing.md","skills/test-guard/references/review-checklist.md"],
+      "name": "test-guard",
+      "sha256": "68f361a3af8ced1af460b749515327965a83cc1bf09605bce40742c3c87c28b3",
+      "version": "1.0.0"
+    },
+    {
+      "description": "Review WooCommerce extensions and integrations for HPOS, CRUD, checkout, money, runtime, and scale safety.",
+      "files": ["skills/woo-guard/SKILL.md","skills/woo-guard/VERSION","skills/woo-guard/agents/openai.yaml","skills/woo-guard/references/checkout-and-money.md","skills/woo-guard/references/hpos-and-crud.md"],
+      "name": "woo-guard",
+      "sha256": "a1c0fbe13e79a1f840285a7159d854b9328a14f8a21a3f5f4cb91534c1961060",
+      "version": "1.0.0"
+    },
+    {
+      "description": "Review WordPress plugins, themes, blocks, REST, AJAX, shortcode, query, and WP-CLI changes for shipping safety.",
+      "files": ["skills/wp-guard/SKILL.md","skills/wp-guard/VERSION","skills/wp-guard/agents/openai.yaml","skills/wp-guard/references/performance.md","skills/wp-guard/references/security.md"],
+      "name": "wp-guard",
+      "sha256": "5642ec908f9e93e56f440ca093341ee505052fdc2e02a45ff3bb77f513e1d0d3",
+      "version": "1.0.0"
+    }
+  ]
+}

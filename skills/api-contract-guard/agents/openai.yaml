@@ -1,0 +1,4 @@
+interface:
+  display_name: "Api Contract Guard"
+  short_description: "Review HTTP, RPC, webhook, event, and internal service contracts for validation, compatibility, fail"
+  default_prompt: "Use $api-contract-guard on the relevant diff and return an evidence-backed receipt."

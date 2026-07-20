@@ -1,0 +1,5 @@
+{
+  "skill": "concurrency-guard",
+  "expected_findings": [],
+  "expected_result": "pass"
+}

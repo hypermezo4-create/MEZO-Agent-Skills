@@ -1,0 +1,5 @@
+{
+  "skill": "security-guard",
+  "expected_findings": [],
+  "expected_result": "pass"
+}

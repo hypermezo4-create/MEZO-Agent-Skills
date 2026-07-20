@@ -1,0 +1,6 @@
+repository: hypermezo4-create/DeadZone_xiaomi-Lite
+languages: [shell, yaml, python]
+required_skills: [clean-code-guard, security-guard, test-guard, android-build-guard, deployment-guard]
+protected_paths: [".github/workflows/**", "device/**", "vendor/**", "scripts/upload*"]
+required_checks: ["build smoke test", "artifact validation", "secret scan"]
+approval_required_for: [device_config_change, release_upload, workflow_permission_change]

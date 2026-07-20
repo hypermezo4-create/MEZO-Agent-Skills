@@ -1,0 +1,4 @@
+interface:
+  display_name: "Woo Guard"
+  short_description: "Review WooCommerce extensions and integrations for HPOS, CRUD, checkout, money, runtime, and scale s"
+  default_prompt: "Use $woo-guard on the relevant diff and return an evidence-backed receipt."

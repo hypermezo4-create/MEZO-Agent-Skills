@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clean Code Guard"
+  short_description: "Review generated or changed production code for correctness, maintainability, and systematic LLM fai"
+  default_prompt: "Use $clean-code-guard on the relevant diff and return an evidence-backed receipt."

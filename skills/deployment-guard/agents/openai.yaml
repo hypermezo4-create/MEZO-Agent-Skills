@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deployment Guard"
+  short_description: "Review Docker, Fly.io, CI/CD, runtime configuration, health, shutdown, migrations, rollout, and roll"
+  default_prompt: "Use $deployment-guard on the relevant diff and return an evidence-backed receipt."

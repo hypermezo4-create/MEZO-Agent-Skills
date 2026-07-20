@@ -1,0 +1,4 @@
+interface:
+  display_name: "Database Guard"
+  short_description: "Review schema, query, transaction, migration, persistence, and PostgreSQL changes for correctness, s"
+  default_prompt: "Use $database-guard on the relevant diff and return an evidence-backed receipt."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wp Guard"
+  short_description: "Review WordPress plugins, themes, blocks, REST, AJAX, shortcode, query, and WP-CLI changes for shipp"
+  default_prompt: "Use $wp-guard on the relevant diff and return an evidence-backed receipt."

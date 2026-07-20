@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "upstream": {
+    "repository": "amElnagdy/guard-skills",
+    "commit": "ffa26036b7b5e77b20b5d679304a703b6fd1a43d",
+    "license": "MIT"
+  },
+  "manifest": "skills-manifest.json",
+  "update_policy": "manual-reviewed-pull-request-only"
+}

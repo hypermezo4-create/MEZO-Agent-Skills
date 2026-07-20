@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent System Guard"
+  short_description: "Review LLM agent orchestration, model routing, tools, prompts, memory, evidence, loops, and reviewer"
+  default_prompt: "Use $agent-system-guard on the relevant diff and return an evidence-backed receipt."

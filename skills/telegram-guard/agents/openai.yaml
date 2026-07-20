@@ -1,0 +1,4 @@
+interface:
+  display_name: "Telegram Guard"
+  short_description: "Review Telegram bot and account-client code for update handling, FloodWait, sessions, concurrency, p"
+  default_prompt: "Use $telegram-guard on the relevant diff and return an evidence-backed receipt."

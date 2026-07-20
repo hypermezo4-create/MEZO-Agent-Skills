@@ -1,0 +1,16 @@
+{
+  "skill": "<name>",
+  "version": "<semver>",
+  "commit": "<sha>",
+  "scope": [],
+  "findings": [
+    {
+      "severity": "critical|important|advisory",
+      "path": "<path>",
+      "evidence": "<evidence>",
+      "risk": "<risk>",
+      "fix": "<fix>"
+    }
+  ],
+  "result": "pass|changes-required"
+}

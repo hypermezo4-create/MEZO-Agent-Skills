@@ -1,0 +1,4 @@
+interface:
+  display_name: "Android Build Guard"
+  short_description: "Review Android ROM, device, kernel, build automation, artifact, release, and Google Drive delivery c"
+  default_prompt: "Use $android-build-guard on the relevant diff and return an evidence-backed receipt."

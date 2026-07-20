@@ -1,0 +1,4 @@
+interface:
+  display_name: "Security Guard"
+  short_description: "Perform a threat-driven security review of changed application, infrastructure, workflow, and integr"
+  default_prompt: "Use $security-guard on the relevant diff and return an evidence-backed receipt."

@@ -1,0 +1,6 @@
+repository: hypermezo4-create/DeadZone-BuildExt
+languages: [shell, yaml, python]
+required_skills: [clean-code-guard, security-guard, test-guard, android-build-guard, deployment-guard]
+protected_paths: [".github/workflows/**", "scripts/upload*", "credentials/**"]
+required_checks: ["workflow syntax", "artifact validation", "secret scan"]
+approval_required_for: [workflow_permission_change, release_upload, destructive_command]
